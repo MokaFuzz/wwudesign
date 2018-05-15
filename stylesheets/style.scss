@@ -6,6 +6,8 @@
 @import 'variables';
 @import 'extentions';
 
+@import 'navanimations';
+
 /************************
   Styles
 ************************/
@@ -100,8 +102,8 @@ h4 {
 /*** STRUCTURE ***/
 
 section {
-  min-height: calc(100vh - 10em);
-  padding: 5em 0;
+  min-height: calc(100vh - 5em);
+  padding: 2.5em 0;
   &.white {
     background: $white;
   }
@@ -146,10 +148,9 @@ section {
 /*** NAVIGATION ***/
 
 nav {
-  display: inline-block;
-  width: 100%;
+  position: fixed;
   .logo {
-    letter-spacing: 1em;
+    letter-spacing: .5em;
     padding: 1em 0 1em 1em;
     font-size: 1em;
     line-height: 1.5em;
@@ -160,13 +161,11 @@ nav {
   }
   ul {
     line-height: 6em;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     li {
-      display: inline-block;
+      list-style-type: none;
       padding: 0 2em;
-      &:first-child {
-        padding-left: 0;
-      }
       &:last-child {
         padding-right: 0;
       }
@@ -175,28 +174,9 @@ nav {
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
-        color: $blue;
-        line-height: 1.5em;
-        &:hover,
-        &:focus {
-          color: $blue;
-        }
-        &:after {
-          bottom: 0;
-          content: "";
-          display: block;
-          height: 2px;
-          left: 50%;
-          position: absolute;
-          background: $blue;
-          transition: width 0.25s ease 0s, left 0.25s ease 0s;
-          width: 0;
-        }
-        &:hover:after,
-        &:focus:after {
-          width: 100%;
-          left: 0;
-        }
+        position: relative;
+        vertical-align: middle;
+        transition: color 0.25s;
       }
     }
   }

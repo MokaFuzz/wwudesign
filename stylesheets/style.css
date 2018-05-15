@@ -70,8 +70,8 @@ h4 {
 
 /*** STRUCTURE ***/
 section {
-  min-height: calc(100vh - 10em);
-  padding: 5em 0; }
+  min-height: calc(100vh - 5em);
+  padding: 2.5em 0; }
   section.white {
     background: white; }
   section.blue {
@@ -104,10 +104,9 @@ section {
 
 /*** NAVIGATION ***/
 nav {
-  display: inline-block;
-  width: 100%; }
+  position: fixed; }
   nav .logo {
-    letter-spacing: 1em;
+    letter-spacing: .5em;
     padding: 1em 0 1em 1em;
     font-size: 1em;
     line-height: 1.5em;
@@ -117,12 +116,11 @@ nav {
     float: left; }
   nav ul {
     line-height: 6em;
-    text-align: center; }
+    display: flex;
+    justify-content: space-around; }
     nav ul li {
-      display: inline-block;
+      list-style-type: none;
       padding: 0 2em; }
-      nav ul li:first-child {
-        padding-left: 0; }
       nav ul li:last-child {
         padding-right: 0; }
       nav ul li a {
@@ -130,22 +128,8 @@ nav {
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
-        color: #46a0a5;
-        line-height: 1.5em; }
-        nav ul li a:hover, nav ul li a:focus {
-          color: #46a0a5; }
-        nav ul li a:after {
-          bottom: 0;
-          content: "";
-          display: block;
-          height: 2px;
-          left: 50%;
-          position: absolute;
-          background: #46a0a5;
-          transition: width 0.25s ease 0s, left 0.25s ease 0s;
-          width: 0; }
-        nav ul li a:hover:after, nav ul li a:focus:after {
-          width: 100%;
-          left: 0; }
+        position: relative;
+        vertical-align: middle;
+        transition: color 0.25s; }
 
 /*# sourceMappingURL=style.css.map */
