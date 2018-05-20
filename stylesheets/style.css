@@ -4,6 +4,128 @@
 /* Breakpoints */
 /* Typography */
 /* Colors */
+nav a {
+  position: relative;
+  vertical-align: middle; }
+  nav a::before, nav a::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.draw {
+  transition: color 0.25s; }
+  .draw::before, .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0; }
+  .draw::before {
+    top: 0;
+    left: 0; }
+  .draw::after {
+    bottom: 0;
+    right: 0; }
+  .draw:hover {
+    color: #46a0a5; }
+  .draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%; }
+  .draw:hover::before {
+    border-top-color: #46a0a5;
+    border-right-color: #46a0a5;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  .draw:hover::after {
+    border-bottom-color: #46a0a5;
+    border-left-color: #46a0a5;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+
+.meet:hover {
+  color: #46a0a5; }
+.meet::after {
+  top: 0;
+  left: 0; }
+.meet:hover::before {
+  border-top-color: #46a0a5;
+  border-right-color: #46a0a5; }
+.meet:hover::after {
+  border-bottom-color: #46a0a5;
+  border-left-color: #46a0a5;
+  transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; }
+
+.center:hover {
+  color: #46a0a5; }
+.center::before, .center::after {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center; }
+.center::before {
+  border-top: 2px solid #46a0a5;
+  border-bottom: 2px solid #46a0a5;
+  transform: scale3d(0, 1, 1); }
+.center::after {
+  border-left: 2px solid #46a0a5;
+  border-right: 2px solid #46a0a5;
+  transform: scale3d(1, 0, 1); }
+.center:hover::before, .center:hover::after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s; }
+
+.spin {
+  width: 5em;
+  height: 5em;
+  padding: 0; }
+  .spin:hover {
+    color: #46a0a5; }
+  .spin::before, .spin::after {
+    top: 0;
+    left: 0; }
+  .spin::before {
+    border: 2px solid transparent; }
+  .spin:hover::before {
+    border-top-color: #46a0a5;
+    border-right-color: #46a0a5;
+    border-bottom-color: #46a0a5;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s; }
+  .spin::after {
+    border: 0 solid transparent; }
+  .spin:hover::after {
+    border-top: 2px solid #46a0a5;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    transform: rotate(270deg);
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s; }
+
+.circle {
+  border-radius: 100%;
+  box-shadow: none; }
+  .circle::before, .circle::after {
+    border-radius: 100%; }
+
+.thick {
+  color: #e5634b; }
+  .thick:hover {
+    color: #fff;
+    font-weight: 700; }
+  .thick::before {
+    border: 2.5em solid transparent;
+    z-index: -1; }
+  .thick::after {
+    mix-blend-mode: color-dodge;
+    z-index: -1; }
+  .thick:hover::before {
+    background: #e5634b;
+    border-top-color: #e5634b;
+    border-right-color: #e5634b;
+    border-bottom-color: #e5634b;
+    transition: background 0s linear 0.4s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.15s, border-bottom-color 0.15s linear 0.25s; }
+  .thick:hover::after {
+    border-top: 2.5em solid #e5634b;
+    border-left-width: 2.5em;
+    border-right-width: 2.5em; }
+
 /************************
   Styles
 ************************/
@@ -21,7 +143,8 @@ html > * {
   html > * {
     font-size: 16px; } }
 body {
-  font-family: "proxima-nova", sans-serif; }
+  font-family: "proxima-nova", sans-serif;
+  overflow-x: hidden; }
 
 h1,
 h2,
@@ -34,12 +157,11 @@ p {
 
 h1 {
   display: inline-block;
-  width: 100%;
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
   border: 0.1em solid white;
-  padding: .5em 0;
+  padding: .5em;
   text-align: center; }
   h1.blue {
     color: #46a0a5;
@@ -71,7 +193,8 @@ h4 {
 /*** STRUCTURE ***/
 section {
   min-height: calc(100vh - 5em);
-  padding: 2.5em 0; }
+  padding: 2.5em 0;
+  position: relative; }
   section.white {
     background: white; }
   section.blue {
@@ -80,6 +203,13 @@ section {
   section.orange {
     background: #e5634b;
     color: white; }
+  section .content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%); }
 
 .button {
   text-transform: uppercase;
@@ -102,34 +232,66 @@ section {
     .button.orange:hover, .button.orange:focus {
       background: #dd3d20; }
 
+.sideimg {
+  position: absolute;
+  z-index: 1; }
+  .sideimg.sizeheight {
+    width: auto;
+    height: 50vh; }
+  .sideimg.sizewidth {
+    width: 10em;
+    height: auto; }
+  .sideimg.top {
+    top: 0; }
+  .sideimg.bottom {
+    bottom: 0; }
+  .sideimg.left {
+    left: 0; }
+  .sideimg.right {
+    right: 0; }
+
 /*** NAVIGATION ***/
-nav {
-  position: fixed; }
-  nav .logo {
-    letter-spacing: .5em;
-    padding: 1em 0 1em 1em;
-    font-size: 1em;
-    line-height: 1.5em;
-    color: white;
-    background: #e5634b;
-    display: inline-block;
-    float: left; }
-  nav ul {
-    line-height: 6em;
-    display: flex;
-    justify-content: space-around; }
-    nav ul li {
-      list-style-type: none;
-      padding: 0 2em; }
-      nav ul li:last-child {
-        padding-right: 0; }
-      nav ul li a {
-        display: block;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        position: relative;
-        vertical-align: middle;
-        transition: color 0.25s; }
+nav .logo {
+  letter-spacing: .5em;
+  padding: 1em 0 1em 1em;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: white;
+  background: #e5634b;
+  display: inline-block;
+  float: left; }
+nav ul {
+  line-height: 6em;
+  display: flex;
+  justify-content: space-around; }
+  nav ul li {
+    list-style-type: none;
+    padding: 0 1em; }
+    nav ul li:last-child {
+      padding-right: 0; }
+    nav ul li a {
+      color: #46a0a5;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      vertical-align: middle;
+      transition: color 0.25s;
+      padding: calc(.5em + 4px) calc(.5em - 2px) 0.5em 0.5em; }
+
+/*** HEADER ***/
+header {
+  position: relative;
+  z-index: 1; }
+
+#header .animation img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto; }
+
+/*** SKELETON FIXES ***/
+.container {
+  width: calc(80% - 12em); }
 
 /*# sourceMappingURL=style.css.map */
