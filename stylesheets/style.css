@@ -153,7 +153,8 @@ h4,
 h5,
 h6,
 p {
-  display: inline; }
+  display: inline; 
+}
 
 h1 {
   display: inline-block;
@@ -261,6 +262,7 @@ nav .logo {
   display: inline-block;
   float: left; }
 nav ul {
+  padding-left: 3%;
   line-height: 6em;
   display: flex;
   justify-content: space-around; }
@@ -271,8 +273,7 @@ nav ul {
       padding-right: 0; }
     nav ul li a {
       color: #46a0a5;
-      font-size: 0.8em;
-      position: relative;
+      font-size: 0.9em;
       text-decoration: none;
       text-transform: uppercase;
       position: relative;
