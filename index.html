@@ -9,8 +9,8 @@
   <!--<meta name="description" content="Description">-->
   <!--<meta name="author" content="Author">-->
 
-  <link rel="stylesheet" href="libraries/Skeleton-2.0.4/css/normalize.css">
-  <link rel="stylesheet" href="libraries/Skeleton-2.0.4/css/skeleton.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/animate.css">
 
@@ -30,24 +30,29 @@
     <header>
       <div class="container">
         <nav>
-          <p class="logo">WWU <br> DESIGN <br> 2018</p>
-          <ul>
-            <li>
-              <a class="draw meet" href="#about">About</a>
-            </li>
-            <li>
-              <a class="draw meet" href="#guest">Guest</a>
-            </li>
-            <li>
-              <a class="draw meet" href="#ba">BA Seniors</a>
-            </li>
-            <li>
-              <a class="draw meet" href="#bfa">BFA Seniors</a>
-            </li>
-            <li>
-              <a class="draw meet" href="#directions">Directions</a>
-            </li>
-          </ul>
+          <a href="#header" class="logo">
+            <p class="logo">WWU <br> DESIGN <br> 2018</p>
+          </a>
+          <a href="menu-main-menu" id="togglenav"><span></span></a>
+          <div id="menu-main-menu-container">
+            <ul id="menu-main-menu">
+              <li>
+                <a class="draw meet" href="#about">About</a>
+              </li>
+              <li>
+                <a class="draw meet" href="#guest">Guest</a>
+              </li>
+              <li>
+                <a class="draw meet" href="#ba">BA Seniors</a>
+              </li>
+              <li>
+                <a class="draw meet" href="#bfa">BFA Seniors</a>
+              </li>
+              <li>
+                <a class="draw meet" href="#directions">Directions</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -332,48 +337,10 @@
 </script>
 
 <script>
-  
   AOS.init();
 
 </script>
-
-<script>
   
-  var responsiveNav = document.getElementById('js-responsive-nav');
-
-  /* Insert <a> element for toggle button inside the <nav> element */
-  var toggleBtn = document.createElement('a');
-  toggleBtn.setAttribute('href', '#');
-  toggleBtn.setAttribute('class', 'responsive-nav__toggle');
-  responsiveNav.insertBefore(toggleBtn, responsiveNav.firstChild);
-
-  /* Has Class Function */
-  function hasClass(e, t) {
-    return (new RegExp(' ' + t + ' ')).test(' ' + e.className + ' ')
-  }
-
-  /* Toggle Class Function */
-  function toggleClass(e, t) {
-    var n = ' ' + e.className.replace(/[\t\r\n]/g, ' ') + ' ';
-    if (hasClass(e, t)) {
-      while (n.indexOf(' ' + t + ' ') >= 0) {
-        n = n.replace(' ' + t + ' ', ' ')
-      }
-      e.className = n.replace(/^\s+|\s+$/g, '')
-    } else {
-      e.className += ' ' + t
-    }
-  }
-
-  /* Toggle 'responsive-nav--open' when button is clicked */
-  toggleBtn.onclick = function() {
-    toggleClass(this.parentNode, 'responsive-nav--open');
-  }
-
-  /* Add a class of 'js' to the HTML element */
-  var root = document.documentElement;
-  root.className = root.className + ' js';
-
-</script>
+  <script src="scripts/nav.js"></script>
 
 </html>

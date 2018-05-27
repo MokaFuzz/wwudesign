@@ -4,6 +4,64 @@
 /* Breakpoints */
 /* Typography */
 /* Colors */
+#togglenav {
+  float: right;
+  width: 1.5em;
+  height: 30px;
+  margin-top: 2em; }
+  #togglenav span {
+    position: relative;
+    display: block; }
+  #togglenav span:after,
+  #togglenav span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -.5em; }
+  #togglenav span:after {
+    top: .5em; }
+  #togglenav span,
+  #togglenav span::after,
+  #togglenav span::before {
+    width: 100%;
+    height: .15em;
+    background-color: #222222;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 0; }
+  #togglenav.on span {
+    background-color: transparent; }
+  #togglenav.on span::before {
+    transform: rotate(45deg) translate(0.35em, 0.35em); }
+  #togglenav.on span::after {
+    transform: rotate(-45deg) translate(0.35em, -0.35em); }
+  #togglenav.on + #menu-main-menu-container {
+    opacity: 1;
+    visibility: visible;
+    padding: 1em;
+    text-align: center; }
+
+#menu-main-menu-container {
+  visibility: hidden; }
+  #menu-main-menu-container li {
+    display: block; }
+
+@media (max-width: 1060px) {
+  header .container {
+    width: 100%;
+    position: absolute;
+    padding: 0 2em; } }
+@media (min-width: 1060px) {
+  #togglenav {
+    display: none; }
+
+  nav #menu-main-menu-container {
+    visibility: visible;
+    margin-right: 0;
+    line-height: 4em; }
+    nav #menu-main-menu-container li {
+      display: inline-block;
+      line-height: 8em; } }
 nav a {
   position: relative;
   vertical-align: middle; }
@@ -384,6 +442,11 @@ section {
   min-height: calc(100vh - 5em);
   padding: 2.5em 0;
   position: relative; }
+  section::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
   section.white {
     background: white; }
   section.blue {
@@ -393,7 +456,9 @@ section {
     background: #e5634b;
     color: white; }
   section .content {
-    width: 100%; }
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle; }
 
 .button {
   text-transform: uppercase;
@@ -437,7 +502,7 @@ section {
 /*** NAVIGATION ***/
 nav .logo {
   letter-spacing: .5em;
-  padding: 1em 0 1em 1em;
+  padding: 1em 1em .25em 1em;
   font-size: 1em;
   line-height: 1.5em;
   color: white;
@@ -468,7 +533,7 @@ header {
   position: relative;
   z-index: 1; }
 
-#header .animation img {
+.animation img {
   position: absolute;
   top: 0;
   width: 100%;

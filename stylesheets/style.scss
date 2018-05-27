@@ -6,6 +6,7 @@
 @import 'variables';
 @import 'extentions';
 
+@import 'responsivenav';
 @import 'borders';
 @import 'portraits';
 
@@ -106,6 +107,12 @@ section {
   min-height: calc(100vh - 5em);
   padding: 2.5em 0;
   position: relative;
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
   &.white {
     background: $white;
   }
@@ -119,6 +126,8 @@ section {
   }
   .content {
     width: 100%;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -180,7 +189,7 @@ section {
 nav {
   .logo {
     letter-spacing: .5em;
-    padding: 1em 0 1em 1em;
+    padding: 1em 1em .25em 1em;
     font-size: 1em;
     line-height: 1.5em;
     color: $white;
@@ -219,18 +228,19 @@ header {
   z-index: 1;
 }
 
-#header {
-  .animation {
-    img {
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: auto;
-    }
+#header {}
+
+.animation {
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
   }
 }
 
 /*** SKELETON FIXES ***/
+
 .container {
   width: calc(80% - 12em);
 }
