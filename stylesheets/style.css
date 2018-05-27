@@ -6,9 +6,9 @@
 /* Colors */
 #togglenav {
   float: right;
-  width: 1.5em;
+  width: 2.5em;
   height: 30px;
-  margin-top: 2em; }
+  margin-top: 3em; }
   #togglenav span {
     position: relative;
     display: block; }
@@ -17,14 +17,14 @@
     content: "";
     position: absolute;
     left: 0;
-    top: -.5em; }
+    top: -1em; }
   #togglenav span:after {
-    top: .5em; }
+    top: 1em; }
   #togglenav span,
   #togglenav span::after,
   #togglenav span::before {
     width: 100%;
-    height: .15em;
+    height: .25em;
     background-color: #222222;
     transition: all 0.3s;
     backface-visibility: hidden;
@@ -32,9 +32,9 @@
   #togglenav.on span {
     background-color: transparent; }
   #togglenav.on span::before {
-    transform: rotate(45deg) translate(0.35em, 0.35em); }
+    transform: rotate(45deg) translate(0.7em, 0.7em); }
   #togglenav.on span::after {
-    transform: rotate(-45deg) translate(0.35em, -0.35em); }
+    transform: rotate(-45deg) translate(0.7em, -0.7em); }
   #togglenav.on + #menu-main-menu-container {
     opacity: 1;
     visibility: visible;
@@ -46,10 +46,20 @@
   #menu-main-menu-container li {
     display: block; }
 
-@media (max-width: 1060px) {
+@media (max-width: 1290px) {
   header .container {
-    width: 100%;
-    padding: 0 2em; } }
+    margin-top: -2.5em;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    width: 100% !important;
+    padding: 0 2.5em; } }
+@media (min-width: 768px) {
+  .container {
+    max-width: 100% !important; } }
+@media (min-width: 576px) {
+  .container {
+    max-width: 100% !important; } }
 @media (min-width: 1060px) {
   #togglenav {
     display: none; }
@@ -385,7 +395,7 @@ html > * {
 @media (min-width: 780px) {
   html > * {
     font-size: 14px; } }
-@media (min-width: 1200px) {
+@media (min-width: 1290px) {
   html > * {
     font-size: 16px; } }
 body {
@@ -531,8 +541,12 @@ nav ul {
       position: relative;
       vertical-align: middle;
       transition: color 0.25s;
-      padding: calc(.5em + 4px) calc(.5em - 2px) 0.5em 0.5em; }
+      padding: calc(1em + 1px) calc(1em - 1px) 1em 1em; }
 
+@media (max-width: 1060px) {
+  nav ul {
+    display: block;
+    background-color: white; } }
 /*** HEADER ***/
 header {
   position: relative;
