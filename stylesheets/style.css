@@ -49,7 +49,6 @@
 @media (max-width: 1060px) {
   header .container {
     width: 100%;
-    position: absolute;
     padding: 0 2em; } }
 @media (min-width: 1060px) {
   #togglenav {
@@ -431,6 +430,9 @@ h3 {
 h4 {
   font-size: 1.25em; }
 
+a:hover {
+  text-decoration: none; }
+
 .right {
   float: right; }
 
@@ -439,9 +441,12 @@ h4 {
 
 /*** STRUCTURE ***/
 section {
-  min-height: calc(100vh - 5em);
+  min-height: 100vh;
   padding: 2.5em 0;
   position: relative; }
+  section:not(#header) {
+    min-height: 100vh;
+    padding: 6em 0; }
   section::before {
     content: '';
     display: inline-block;
@@ -533,11 +538,20 @@ header {
   position: relative;
   z-index: 1; }
 
-.animation img {
+.animation {
   position: absolute;
   top: 0;
-  width: 100%;
-  height: auto; }
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .animation img {
+    position: relative;
+    height: auto; }
+
+/*** MISC ***/
+.speakerportrait {
+  position: absolute;
+  bottom: 0; }
 
 /*** SKELETON FIXES ***/
 .container {

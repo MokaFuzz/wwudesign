@@ -93,6 +93,10 @@ h4 {
   font-size: 1.25em;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .right {
   float: right;
 }
@@ -104,9 +108,13 @@ h4 {
 /*** STRUCTURE ***/
 
 section {
-  min-height: calc(100vh - 5em);
+  min-height: 100vh;
   padding: 2.5em 0;
   position: relative;
+  &:not(#header){
+    min-height: 100vh;
+    padding: 6em 0;
+  }
   &::before {
     content: '';
     display: inline-block;
@@ -231,12 +239,21 @@ header {
 #header {}
 
 .animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   img {
-    position: absolute;
-    top: 0;
-    width: 100%;
+    position: relative;
     height: auto;
   }
+}
+
+/*** MISC ***/
+.speakerportrait {
+  position: absolute;
+  bottom: 0;
 }
 
 /*** SKELETON FIXES ***/

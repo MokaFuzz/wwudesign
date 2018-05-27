@@ -56,13 +56,12 @@
 @media (max-width: $desktop) {
   header .container {
     width: 100%;
-    position: absolute;
     padding: 0 2em;
   }
 }
 
 
-@media (max-width: $mobile) {
+@media (max-width: $desktop) {
   #togglenav.on + #menu-main-menu-container {
   }
 }
@@ -72,7 +71,7 @@
   }
 }
 
-@media (min-width: $mobile) {
+@media (min-width: $desktop) {
   #togglenav.on + #menu-main-menu-container {
   }
 }
