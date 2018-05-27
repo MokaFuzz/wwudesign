@@ -7,6 +7,7 @@
 @import 'extentions';
 
 @import 'borders';
+@import 'portraits';
 
 /************************
   Styles
@@ -56,7 +57,7 @@ p {
 
 h1 {
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
   border: .1em solid $white;
@@ -118,11 +119,6 @@ section {
   }
   .content {
     width: 100%;
-    position: absolute;
-    top:50%;
-    left: 0%;
-    transform:translate(0%, -50%);
-    -webkit-transform:translate(0%, -50%);
   }
 }
 

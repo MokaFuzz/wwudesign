@@ -126,6 +126,195 @@ nav a {
     border-left-width: 2.5em;
     border-right-width: 2.5em; }
 
+.portrait {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0;
+  padding-top: 66.64%;
+  display: block;
+  position: relative; }
+
+#andersonjack {
+  background-image: url(../images/bapics/anderson_jack1.jpg); }
+  #andersonjack:hover, #andersonjack:focus {
+    background-image: url(../images/bapics/anderson_jack2.jpg); }
+
+#andersonjake {
+  background-image: url(../images/bapics/anderson_jake1.jpg); }
+  #andersonjake:hover, #andersonjake:focus {
+    background-image: url(../images/bapics/anderson_jake2.jpg); }
+
+#andersonsj {
+  background-image: url(../images/bapics/anderson_sj1.jpg); }
+  #andersonsj:hover, #andersonsj:focus {
+    background-image: url(../images/bapics/anderson_sj2.jpg); }
+
+#aultburch {
+  background-image: url(../images/bapics/ault_burch1.jpg); }
+  #aultburch:hover, #aultburch:focus {
+    background-image: url(../images/bapics/ault_burch2.jpg); }
+
+#bellbrooklyn {
+  background-image: url(../images/bapics/bell_brooklyn1.jpg); }
+  #bellbrooklyn:hover, #bellbrooklyn:focus {
+    background-image: url(../images/bapics/bell_brooklyn2.jpg); }
+
+#birdmouse {
+  background-image: url(../images/bapics/bird_mouse1.jpg); }
+  #birdmouse:hover, #birdmouse:focus {
+    background-image: url(../images/bapics/bird_mouse2.jpg); }
+
+#buskoallyson {
+  background-image: url(../images/bapics/busko_allyson1.jpg); }
+  #buskoallyson:hover, #buskoallyson:focus {
+    background-image: url(../images/bapics/busko_allyson2.jpg); }
+
+#caldwellskyler {
+  background-image: url(../images/bapics/caldwell-olsen_skyler1.jpg); }
+  #caldwellskyler:hover, #caldwellskyler:focus {
+    background-image: url(../images/bapics/caldwell-olsen_skyler2.jpg); }
+
+#cederbergsarah {
+  background-image: url(../images/bapics/cederberg_sarah1.jpg); }
+  #cederbergsarah:hover, #cederbergsarah:focus {
+    background-image: url(../images/bapics/cederberg_sarah2.jpg); }
+
+#churchkaitlyn {
+  background-image: url(../images/bapics/church_kaitlyn1.jpg); }
+  #churchkaitlyn:hover, #churchkaitlyn:focus {
+    background-image: url(../images/bapics/church_kaitlyn2.jpg); }
+
+#danbysaige {
+  background-image: url(../images/bapics/danby_saige1.jpg); }
+  #danbysaige:hover, #danbysaige:focus {
+    background-image: url(../images/bapics/danby_saige2.jpg); }
+
+#dierkenfrances {
+  background-image: url(../images/bapics/dierken_frances1.jpg); }
+  #dierkenfrances:hover, #dierkenfrances:focus {
+    background-image: url(../images/bapics/dierken_frances2.jpg); }
+
+#dumassarah {
+  background-image: url(../images/bapics/dumas_sarah1.jpg); }
+  #dumassarah:hover, #dumassarah:focus {
+    background-image: url(../images/bapics/dumas_sarah2.jpg); }
+
+#hammonkerry {
+  background-image: url(../images/bapics/hammond_kerry1.jpg); }
+  #hammonkerry:hover, #hammonkerry:focus {
+    background-image: url(../images/bapics/hammond_kerry2.jpg); }
+
+#hiestandally {
+  background-image: url(../images/bapics/hiestand_ally1.jpg); }
+  #hiestandally:hover, #hiestandally:focus {
+    background-image: url(../images/bapics/hiestand_ally2.jpg); }
+
+#howeliz {
+  background-image: url(../images/bapics/howe_liz1.jpg); }
+  #howeliz:hover, #howeliz:focus {
+    background-image: url(../images/bapics/howe_liz2.jpg); }
+
+#kimmerlyamry {
+  background-image: url(../images/bapics/kimmerly_amry1.jpg); }
+  #kimmerlyamry:hover, #kimmerlyamry:focus {
+    background-image: url(../images/bapics/kimmerly_amry2.jpg); }
+
+#larsonluke {
+  background-image: url(../images/bapics/larson_luke1.jpg); }
+  #larsonluke:hover, #larsonluke:focus {
+    background-image: url(../images/bapics/larson_luke2.jpg); }
+
+#luquekatelyn {
+  background-image: url(../images/bapics/luque_katelyn1.jpg); }
+  #luquekatelyn:hover, #luquekatelyn:focus {
+    background-image: url(../images/bapics/luque_katelyn2.jpg); }
+
+#marcosmarie {
+  background-image: url(../images/bapics/marcos_marie1.jpg); }
+  #marcosmarie:hover, #marcosmarie:focus {
+    background-image: url(../images/bapics/marcos_marie2.jpg); }
+
+#maynardscott {
+  background-image: url(../images/bapics/maynard_scott1.jpg); }
+  #maynardscott:hover, #maynardscott:focus {
+    background-image: url(../images/bapics/maynard_scott2.jpg); }
+
+#minkemamadeline {
+  background-image: url(../images/bapics/minkema_madeline1.jpg); }
+  #minkemamadeline:hover, #minkemamadeline:focus {
+    background-image: url(../images/bapics/minkema_madeline2.jpg); }
+
+#nguyenduong {
+  background-image: url(../images/bapics/nguyen_duong1.jpg); }
+  #nguyenduong:hover, #nguyenduong:focus {
+    background-image: url(../images/bapics/nguyen_duong2.jpg); }
+
+#ormmaney {
+  background-image: url(../images/bapics/orm_maney1.jpg); }
+  #ormmaney:hover, #ormmaney:focus {
+    background-image: url(../images/bapics/orm_maney2.jpg); }
+
+#parzialegrace {
+  background-image: url(../images/bapics/parziale_grace1.jpg); }
+  #parzialegrace:hover, #parzialegrace:focus {
+    background-image: url(../images/bapics/parziale_grace2.jpg); }
+
+#plagerfinn {
+  background-image: url(../images/bapics/plager_finn1.jpg); }
+  #plagerfinn:hover, #plagerfinn:focus {
+    background-image: url(../images/bapics/plager_finn2.jpg); }
+
+#ruppelmaddy {
+  background-image: url(../images/bapics/ruppel_maddy1.jpg); }
+  #ruppelmaddy:hover, #ruppelmaddy:focus {
+    background-image: url(../images/bapics/ruppel_maddy2.jpg); }
+
+#sanderskaitlyn {
+  background-image: url(../images/bapics/sanders_kaitlyn1.jpg); }
+  #sanderskaitlyn:hover, #sanderskaitlyn:focus {
+    background-image: url(../images/bapics/sanders_kaitlyn2.jpg); }
+
+#semezmarina {
+  background-image: url(../images/bapics/semez_marina1.jpg); }
+  #semezmarina:hover, #semezmarina:focus {
+    background-image: url(../images/bapics/semez_marina2.jpg); }
+
+#spengleramy {
+  background-image: url(../images/bapics/spengler_amy1.jpg); }
+  #spengleramy:hover, #spengleramy:focus {
+    background-image: url(../images/bapics/spengler_amy2.jpg); }
+
+#thackerbrandon {
+  background-image: url(../images/bapics/thacker_brandon1.jpg); }
+  #thackerbrandon:hover, #thackerbrandon:focus {
+    background-image: url(../images/bapics/thacker_brandon2.jpg); }
+
+#thomsenlaura {
+  background-image: url(../images/bapics/thomsen_laura1.jpg); }
+  #thomsenlaura:hover, #thomsenlaura:focus {
+    background-image: url(../images/bapics/thomsen_laura2.jpg); }
+
+#trieuhao {
+  background-image: url(../images/bapics/trieu_hao1.jpg); }
+  #trieuhao:hover, #trieuhao:focus {
+    background-image: url(../images/bapics/trieu_hao2.jpg); }
+
+#turnerparkavi {
+  background-image: url(../images/bapics/turner_parkavi1.jpg); }
+  #turnerparkavi:hover, #turnerparkavi:focus {
+    background-image: url(../images/bapics/turner_parkavi2.jpg); }
+
+#voyedavid {
+  background-image: url(../images/bapics/voye_david1.jpg); }
+  #voyedavid:hover, #voyedavid:focus {
+    background-image: url(../images/bapics/voye_david2.jpg); }
+
+#wernerevelyn {
+  background-image: url(../images/bapics/werner_evelyn1.jpg); }
+  #wernerevelyn:hover, #wernerevelyn:focus {
+    background-image: url(../images/bapics/werner_evelyn2.jpg); }
+
 /************************
   Styles
 ************************/
@@ -153,15 +342,14 @@ h4,
 h5,
 h6,
 p {
-  display: inline; 
-}
+  display: inline; }
 
 h1 {
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  border: 0.1em solid #fff;
+  border: 0.1em solid white;
   padding: .5em;
   text-align: center; }
   h1.blue {
@@ -205,12 +393,7 @@ section {
     background: #e5634b;
     color: white; }
   section .content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    -webkit-transform: translate(0%, -50%); }
+    width: 100%; }
 
 .button {
   text-transform: uppercase;
@@ -257,12 +440,11 @@ nav .logo {
   padding: 1em 0 1em 1em;
   font-size: 1em;
   line-height: 1.5em;
-  color: #fff;
+  color: white;
   background: #e5634b;
   display: inline-block;
   float: left; }
 nav ul {
-  padding-left: 3%;
   line-height: 6em;
   display: flex;
   justify-content: space-around; }
@@ -273,7 +455,7 @@ nav ul {
       padding-right: 0; }
     nav ul li a {
       color: #46a0a5;
-      font-size: 0.9em;
+      position: relative;
       text-decoration: none;
       text-transform: uppercase;
       position: relative;
