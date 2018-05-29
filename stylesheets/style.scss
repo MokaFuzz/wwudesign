@@ -64,6 +64,7 @@ h1 {
   border: .1em solid $white;
   padding: .5em;
   text-align: center;
+  margin-bottom: 1em;
   &.blue {
     color: $blue;
     border-color: $blue;
@@ -71,6 +72,12 @@ h1 {
   &.orange {
     color: $orange;
     border-color: $orange;
+  }
+}
+
+@media (min-width: $mobile-xl) {
+  [class*="col-"] h1 {
+    width: 100%;
   }
 }
 

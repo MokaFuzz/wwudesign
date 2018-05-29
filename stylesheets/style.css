@@ -418,7 +418,8 @@ h1 {
   text-transform: uppercase;
   border: 0.1em solid white;
   padding: .5em;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1em; }
   h1.blue {
     color: #46a0a5;
     border-color: #46a0a5; }
@@ -426,6 +427,9 @@ h1 {
     color: #e5634b;
     border-color: #e5634b; }
 
+@media (min-width: 780px) {
+  [class*="col-"] h1 {
+    width: 100%; } }
 h2 {
   font-size: 2em;
   font-weight: bold; }
