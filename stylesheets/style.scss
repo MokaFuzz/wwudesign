@@ -22,21 +22,21 @@ html > * {
 
 @media (min-width: $mobile-lg) {
   html > * {
-    font-size: 12px;
+    font-size: 14px;
 
   }
 }
 
 @media (min-width: $mobile-xl) {
   html > * {
-    font-size: 14px;
+    font-size: 16px;
 
   }
 }
 
 @media (min-width: $desktop-lg) {
   html > * {
-    font-size: 16px;
+    font-size: 18px;
 
   }
 }
@@ -72,12 +72,6 @@ h1 {
   &.orange {
     color: $orange;
     border-color: $orange;
-  }
-}
-
-@media (min-width: $mobile-xl) {
-  [class*="col-"] h1 {
-    width: 100%;
   }
 }
 
@@ -118,11 +112,14 @@ a:hover {
   padding: 1em 0;
   text-transform: uppercase;
   margin-bottom: 2em;
+  font-size: .75em;
+  color: $blue;
 }
 
 /*** STRUCTURE ***/
 
 section {
+  overflow: hidden;
   min-height: 100vh;
   padding: 2.5em 0;
   position: relative;
@@ -160,6 +157,7 @@ section {
   padding: .5em 1em;
   height: auto;
   transition: all .25s ease;
+  display: block;
   &.blue {
     background-color: $blue;
     color: $white;
@@ -291,22 +289,27 @@ header {
 #header {}
 
 .animation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   img {
     position: relative;
     height: auto;
+    width: 100%;
   }
 }
 
 /*** MISC ***/
 
-.speakerportrait {
+.speakerportrait,
+.bfaportrait {
   position: absolute;
   bottom: 0;
+  width: 40%;
+  left: 50%;
+}
+
+@media (max-width: $desktop) {
+  .bfaportrait {
+    width: 100%;
+  }
 }
 
 /*** SKELETON FIXES ***/
