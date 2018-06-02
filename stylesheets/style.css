@@ -1,43 +1,28 @@
 /*
-Error: Invalid CSS after "...n: all .2s ease": expected "{", was ";"
-        on line 10 of stylesheets/_portraits.scss
-        from line 11 of stylesheets/style.scss
+Error: Undefined variable: "$tablet".
+        on line 299 of stylesheets/style.scss
 
-5:   height: 0;
-6:   padding-top: 66.64%;
-7:   display: block;
-8:   position: relative;
-9: <<<<<<< HEAD
-10:   transition: all .2s ease;
-11: =======
-12:   transition: all .25s ease;
-13: >>>>>>> b856ed121f391ac682dae11d2d734242ce93b049
-14: }
-15: 
+294:   img {
+295:     position: relative;
+296:   }
+297: }
+298: 
+299: @media (min-width: $tablet) {
+300:   .animation img {
+301:     width: 100vmax;
+302:     height: auto;
+303:   }
+304: }
 
 Backtrace:
-stylesheets/_portraits.scss:10
-stylesheets/style.scss:11
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:677:in `block'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:697:in `block_child'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:689:in `block_contents'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:678:in `block'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:670:in `ruleset'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:696:in `block_child'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:686:in `block_contents'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/scss/parser.rb:41:in `parse'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/engine.rb:414:in `_to_tree'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/engine.rb:321:in `to_tree'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
-/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+stylesheets/style.scss:299
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:555:in `block in run_interp_no_strip'
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:553:in `map'
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:553:in `run_interp_no_strip'
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:560:in `run_interp'
+/Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:525:in `visit_media'
 /Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Users/Allison/.rvm/gems/ruby-2.2.4/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -79,4 +64,4 @@ stylesheets/style.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...n: all .2s ease\": expected \"{\", was \";\"\A         on line 10 of stylesheets/_portraits.scss\A         from line 11 of stylesheets/style.scss\A \A 5:   height: 0;\A 6:   padding-top: 66.64%;\A 7:   display: block;\A 8:   position: relative;\A 9: <<<<<<< HEAD\A 10:   transition: all .2s ease;\A 11: =======\A 12:   transition: all .25s ease;\A 13: >>>>>>> b856ed121f391ac682dae11d2d734242ce93b049\A 14: }\A 15: "; }
+  content: "Error: Undefined variable: \"$tablet\".\A         on line 299 of stylesheets/style.scss\A \A 294:   img {\A 295:     position: relative;\A 296:   }\A 297: }\A 298: \A 299: @media (min-width: $tablet) {\A 300:   .animation img {\A 301:     width: 100vmax;\A 302:     height: auto;\A 303:   }\A 304: }"; }
