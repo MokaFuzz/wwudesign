@@ -290,9 +290,11 @@ header {
 
 .animation {
   img {
-    position: relative;
-    height: auto;
-    width: 100%;
+    position: absolute;
+    width: 150%;
+    left: -25%;
+    padding-top: 125%;
+    transform: translate(0, -50%);
   }
 }
 
