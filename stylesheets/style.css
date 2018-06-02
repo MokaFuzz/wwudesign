@@ -200,7 +200,8 @@ nav a {
   height: 0;
   padding-top: 66.64%;
   display: block;
-  position: relative; }
+  position: relative;
+  transition: all .25s ease; }
 
 #andersonjack {
   background-image: url(../images/bapics/anderson_jack1.jpg); }
@@ -391,13 +392,13 @@ html > * {
 
 @media (min-width: 550px) {
   html > * {
-    font-size: 12px; } }
+    font-size: 14px; } }
 @media (min-width: 780px) {
   html > * {
-    font-size: 14px; } }
+    font-size: 16px; } }
 @media (min-width: 1290px) {
   html > * {
-    font-size: 16px; } }
+    font-size: 18px; } }
 body {
   font-family: "proxima-nova", sans-serif;
   overflow-x: hidden; }
@@ -427,9 +428,6 @@ h1 {
     color: #e5634b;
     border-color: #e5634b; }
 
-@media (min-width: 780px) {
-  [class*="col-"] h1 {
-    width: 100%; } }
 h2 {
   font-size: 2em;
   font-weight: bold; }
@@ -453,8 +451,18 @@ a:hover {
 .left {
   display: left; }
 
+.name {
+  display: block;
+  text-align: center;
+  padding: 1em 0;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  font-size: .75em;
+  color: #46a0a5; }
+
 /*** STRUCTURE ***/
 section {
+  overflow: hidden;
   min-height: 100vh;
   padding: 2.5em 0;
   position: relative; }
@@ -484,7 +492,8 @@ section {
   font-size: 1.5em;
   padding: .5em 1em;
   height: auto;
-  transition: all .25s ease; }
+  transition: all .25s ease;
+  display: block; }
   .button.blue {
     background-color: #46a0a5;
     color: white;
@@ -586,24 +595,24 @@ header {
   position: relative;
   z-index: 1; }
 
-.animation {
+.animation img {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  .animation img {
-    position: absolute;
-    width: 150%;
-    left: -25%;
-    padding-top: 125%;
-    transform: translate(0, -50%); }
+  width: 150%;
+  left: -25%;
+  padding-top: 125%;
+  transform: translate(0, -50%); }
 
 /*** MISC ***/
-.speakerportrait {
+.speakerportrait,
+.bfaportrait {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  width: 40%;
+  left: 50%; }
 
+@media (max-width: 1060px) {
+  .bfaportrait {
+    width: 100%; } }
 /*** SKELETON FIXES ***/
 .container {
   width: calc(80% - 12em); }
