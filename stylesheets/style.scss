@@ -426,6 +426,11 @@ header {
   width: calc(100% - 12em);
 }
 
+.container-fluid {
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
 @media (min-width: $mobile-xl) {
   .container {
     width: calc(80% - 12em);
