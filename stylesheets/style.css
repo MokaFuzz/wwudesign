@@ -485,7 +485,7 @@ section {
     display: inline-block;
     vertical-align: middle; }
 
-@media (min-width: 780px) {
+@media (min-width: 380px) {
   section:not(#directions) {
     min-height: 100vh; } }
 .button {
@@ -621,12 +621,12 @@ header {
   .animation img {
     height: 80vmax;
     width: auto;
-    margin-left: -40vmax; } }
+    margin-left: -20vmax; } }
 @media (max-width: 780px) {
   .animation img {
     height: 60vmax;
     width: auto;
-    margin-left: -30vmax; } }
+    margin-left: -20vmax; } }
 /*** MISC ***/
 .quickinfo {
   padding: 2em;
@@ -636,8 +636,10 @@ header {
 @media (max-width: 960px) {
   section:not(#header)#bfa, section:not(#header)#guest {
     padding-bottom: 25vh; }
+    section:not(#header)#bfa .awphoto,
     section:not(#header)#bfa .speakerportrait,
-    section:not(#header)#bfa .bfaportrait, section:not(#header)#guest .speakerportrait,
+    section:not(#header)#bfa .bfaportrait, section:not(#header)#guest .awphoto,
+    section:not(#header)#guest .speakerportrait,
     section:not(#header)#guest .bfaportrait {
       height: 25vh;
       width: auto;
@@ -646,17 +648,26 @@ header {
       left: 50%; }
     section:not(#header)#bfa .bfaportrait, section:not(#header)#guest .bfaportrait {
       left: 30%; } }
+.row {
+  z-index: 2;
+  position: relative; }
+
+.awphoto,
 .speakerportrait,
 .bfaportrait {
   position: absolute;
   bottom: 0;
   width: 40%;
-  left: 50%; }
+  left: 50%;
+  z-index: 1; }
 
 @media (max-width: 1060px) {
   .bfaportrait {
     width: 100%; } }
 .speakerportrait {
+  width: 40vw; }
+
+.awphoto {
   width: 40vw; }
 
 .bfaportrait {

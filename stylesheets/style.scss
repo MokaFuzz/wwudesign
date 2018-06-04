@@ -150,7 +150,7 @@ section {
   }
 }
 
-@media (min-width: $mobile-xl) {
+@media (min-width: $mobile) {
   section:not(#directions){
     min-height: 100vh;
   }
@@ -337,7 +337,7 @@ header {
   .animation img {
     height: 80vmax;
     width: auto;
-    margin-left: -40vmax;
+    margin-left: -20vmax;
   }
 }
 
@@ -345,7 +345,7 @@ header {
   .animation img {
     height: 60vmax;
     width: auto;
-    margin-left: -30vmax;
+    margin-left: -20vmax;
   }
 }
 
@@ -362,6 +362,7 @@ header {
     &#bfa,
     &#guest {
       padding-bottom: 25vh;
+      .awphoto,
       .speakerportrait,
       .bfaportrait {
         height: 25vh;
@@ -378,12 +379,19 @@ header {
   }
 }
 
+.row {
+  z-index: 2;
+  position: relative;
+}
+
+.awphoto,
 .speakerportrait,
 .bfaportrait {
   position: absolute;
   bottom: 0;
   width: 40%;
   left: 50%;
+  z-index: 1;
 }
 
 @media (max-width: $desktop) {
@@ -393,6 +401,9 @@ header {
 }
 
 .speakerportrait {
+  width: 40vw;
+}
+.awphoto {
   width: 40vw;
 }
 
