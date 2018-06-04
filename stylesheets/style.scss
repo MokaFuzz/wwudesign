@@ -120,7 +120,7 @@ a:hover {
 
 section {
   overflow: hidden; //  min-height: 100vh;
-  padding: 2.5em 0;
+  padding: 0 0 2.5em 0;
   position: relative;
   &:not(#header) {
     //    min-height: 100vh;
